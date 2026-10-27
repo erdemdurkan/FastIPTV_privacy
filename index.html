@@ -1,199 +1,115 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Canlı Yayın Oynatıcı</title>
-    <!-- HLS.js Kütüphanesi -->
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <style>
-        :root {
-            --primary: #e50914;
-            --surface: #0f1419;
-            --surface-alt: #1a1f2e;
-            --text: #f7fafc;
-            --text-muted: #a0aec0;
-            --border: #2d3748;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background-color: #0a0e14;
-            color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
-        }
-
-        .player-wrapper {
-            flex: 2;
-            background: #000;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            aspect-ratio: 16/9;
-            position: relative;
-        }
-
-        video {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
-        .channel-list {
-            flex: 1;
-            background: var(--surface);
-            border-radius: 12px;
-            padding: 16px;
-            border: 1px solid var(--border);
-            min-width: 280px;
-        }
-
-        .channel-title {
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: var(--text);
-        }
-
-        .channel-item {
-            background: var(--surface-alt);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 14px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .channel-item:hover {
-            border-color: var(--primary);
-            transform: translateY(-1px);
-        }
-
-        .channel-item.active {
-            background: var(--primary);
-            border-color: var(--primary);
-        }
-
-        .badge {
-            font-size: 11px;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-
-        @media (max-width: 800px) {
-            .container { flex-direction: column; }
-            .player-wrapper, .channel-list { width: 100%; }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fast IPTV – Gizlilik Politikası / Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; line-height: 1.6; color: #1d2733; }
+  h1 { font-size: 1.7rem; } h2 { font-size: 1.2rem; margin-top: 1.8rem; }
+  nav a { margin-right: 12px; } hr { margin: 3rem 0; border: 0; border-top: 1px solid #ccd3db; }
+  .muted { color: #5b6672; font-size: .9rem; }
+</style>
 </head>
 <body>
+<nav><a href="#tr">Türkçe</a><a href="#en">English</a></nav>
 
-    <div class="container">
-        <!-- HTML5 Video Oynatıcı -->
-        <div class="player-wrapper">
-            <video id="videoPlayer" controls autoplay playsinline></video>
-        </div>
+<section id="tr" lang="tr">
+<h1>Fast IPTV Gizlilik Politikası</h1>
+<p class="muted">Son güncelleme: 27 Ekim 2026 · Geliştirici: SW Crew · İletişim: destek.swcrew@gmail.com</p>
 
-        <!-- Kanal Listesi -->
-        <div class="channel-list">
-            <div class="channel-title">Canlı Kanallar</div>
+<p>Fast IPTV, kendi IPTV aboneliğinizin bilgilerini girerek canlı TV, film ve dizileri izlemenizi sağlayan bir oynatıcı uygulamasıdır. Uygulama herhangi bir yayın, kanal veya içerik sağlamaz ve satmaz; içerik tamamen sizin IPTV sağlayıcınızdan gelir.</p>
 
-            <div class="channel-item" onclick="playStream('https://andro.evrenesoglu99.click/checklist/batutest.m3u8', this)">
-                <span>BeIN Sports 1</span>
-                <span class="badge">NON</span>
-            </div>
-			
-            <div class="channel-item" onclick="playStream('https://tv-trt1.medya.trt.com.tr/master.m3u8', this)">
-                <span>TRT 1 HD</span>
-                <span class="badge">YEREL</span>
-            </div>
+<h2>1. Topladığımız veriler</h2>
+<ul>
+  <li><strong>Google hesabı bilgileri:</strong> Google ile giriş yaptığınızda e-posta adresiniz, adınız, profil fotoğrafınız ve Firebase kullanıcı kimliğiniz (UID) işlenir.</li>
+  <li><strong>IPTV bağlantı bilgileri:</strong> Sizin girdiğiniz sunucu adresi, kullanıcı adı, şifre ve/veya M3U bağlantısı ile liste adı. Bu bilgiler hesabınıza bağlı olarak bulutta saklanır; böylece başka cihazda aynı hesapla girdiğinizde listeniz gelir.</li>
+  <li><strong>Favori kanallar:</strong> Favori olarak eklediğiniz kanalların adı, kimliği, logosu ve sıralaması hesabınıza bağlı olarak bulutta saklanır.</li>
+  <li><strong>Cihazdaki ayarlar:</strong> Tanıtım ekranının gösterilip gösterilmediği, kanal bilgi penceresi süresi gibi tercihler yalnızca cihazınızda tutulur.</li>
+</ul>
+<p>Reklam, analiz (analytics), çökme raporu veya takip amaçlı herhangi bir SDK kullanmıyoruz. Konum, rehber, kamera, mikrofon gibi verilere erişmiyoruz. Uygulama yalnızca internet izni kullanır.</p>
 
-	    <div class="channel-item" onclick="playStream('https://andro.evrenesoglu149.click/checklist/batutest.m3u8', this)">
-                <span>TRT 1 HD</span>
-                <span class="badge">NON</span>
-            </div>
+<h2>2. Verileri nasıl kullanıyoruz</h2>
+<ul>
+  <li>Giriş yapmanızı sağlamak ve hesabınızı tanımak,</li>
+  <li>IPTV listenizi ve favori kanallarınızı cihazlarınız arasında eşitlemek,</li>
+  <li>İçeriğe sizin adınıza IPTV sağlayıcınızdan erişmek.</li>
+</ul>
+<p>Verilerinizi satmaz, kiralamaz, reklam veya profil çıkarma amacıyla kullanmaz ve üçüncü kişilerle paylaşmayız.</p>
 
-<div class="channel-item" onclick="playStream('https://trkvz.daioncdn.net/atv/atv_1080p.m3u8?e=1789185715&st=1_WInKhxosQm74LvFIA0gw&sid=8qrdxgdhhfsi&app=d1ce2d40-5256-4550-b02e-e73c185a314e&ce=3', this)">
-                <span>ATV HD</span>
-                <span class="badge">YEREL</span>
-            </div>
-			
-            <div class="channel-item" onclick="playStream('https://andro.evrenesoglu99.click/checklist/androstreamliveatv.m3u8', this)">
-                <span>ATV HD</span>
-                <span class="badge">NON</span>
-            </div>
-			
-			<div class="channel-item" onclick="playStream('https://ciner.daioncdn.net/showtv/showtv_1080p.m3u8', this)">
-                <span>SHOW TV HD</span>
-                <span class="badge">YEREL</span>
-            </div>
-			
-			<div class="channel-item" onclick="playStream('https://dogus.daioncdn.net/startv/startv_720p.m3u8', this)">
-                <span>STAR TV HD</span>
-                <span class="badge">YEREL</span>
-            </div>
-						
-            <div class="channel-item" onclick="playStream('https://tv-trthaber.medya.trt.com.tr/master.m3u8', this)">
-                <span>TRT Haber HD</span>
-                <span class="badge">YEREL</span>
-            </div>
-        </div>
-    </div>
+<h2>3. Hizmet sağlayıcılar</h2>
+<ul>
+  <li><strong>Google Firebase (Authentication ve Cloud Firestore):</strong> Giriş ve bulut depolama için kullanılır. Veriler Google tarafından işlenir; bkz. <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a> ve <a href="https://firebase.google.com/support/privacy">Firebase Gizlilik ve Güvenlik</a>.</li>
+  <li><strong>IPTV sağlayıcınız:</strong> Uygulama, girdiğiniz bilgilerle doğrudan sağlayıcınızın sunucusuna bağlanır. Sağlayıcınız IP adresinizi ve izleme isteklerinizi görebilir; bu kendi gizlilik politikasına tabidir ve bizim kontrolümüzde değildir. Bazı sağlayıcılar şifrelenmemiş (http) bağlantı kullanabilir.</li>
+</ul>
 
-    <script>
-        const video = document.getElementById('videoPlayer');
-        let hlsInstance = null;
+<h2>4. Güvenlik</h2>
+<p>Bulut verileriniz Firebase güvenlik kurallarıyla korunur: her kullanıcı yalnızca kendi verisini okuyup yazabilir. Veriler Google altyapısında aktarım sırasında şifrelenir. IPTV şifreniz hesabınıza bağlı bulut kaydında saklanır ve yalnızca sizin hesabınızın erişimine açıktır. Hiçbir yöntem %100 güvenli değildir; bu yüzden IPTV şifrenizi başka yerlerde kullanmamanızı öneririz.</p>
 
-        function playStream(url, element) {
-            // Aktif buton görselini güncelle
-            if (element) {
-                document.querySelectorAll('.channel-item').forEach(el => el.classList.remove('active'));
-                element.classList.add('active');
-            }
+<h2>5. Saklama ve silme</h2>
+<p>Verileriniz siz silene kadar veya hesabınız silinene kadar saklanır. Çıkış yaptığınızda favori listesinin cihazdaki kopyası silinir; bulut kopyası hesabınızda kalır. <strong>Hesabınızın ve bulutta saklanan tüm verilerinizin (IPTV bilgileri, favoriler, hesap kaydı) silinmesi için</strong> <a href="mailto:destek.swcrew@gmail.com">destek.swcrew@gmail.com</a> adresine, Google hesabınızın e-postası ile "Hesap silme talebi" konulu bir e-posta gönderin; en geç 30 gün içinde silinir. Uygulamayı kaldırmak cihazdaki yerel verileri siler.</p>
 
-            // HLS.js motoru kontrolü
-            if (Hls.isSupported()) {
-                if (hlsInstance) {
-                    hlsInstance.destroy(); // Önceki akışı temizle
-                }
-                hlsInstance = new Hls({
-                    enableWorker: true,
-                    lowLatencyMode: true
-                });
-                hlsInstance.loadSource(url);
-                hlsInstance.attachMedia(video);
-                hlsInstance.on(Hls.Events.MANIFEST_PARSED, function () {
-                    video.play().catch(() => {});
-                });
-            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                // Safari / iOS yerel desteği
-                video.src = url;
-                video.addEventListener('loadedmetadata', function () {
-                    video.play().catch(() => {});
-                });
-            }
-        }
+<h2>6. Haklarınız</h2>
+<p>6698 sayılı KVKK ve GDPR kapsamında verilerinize erişme, düzeltme, silme, işlenmesine itiraz etme ve taşıma haklarına sahipsiniz. Taleplerinizi yukarıdaki e-posta adresine iletebilirsiniz.</p>
 
-        // Sayfa açıldığında varsayılan olarak TRT 1'i başlat
-        window.addEventListener('DOMContentLoaded', () => {
-            playStream('https://tv-trt1.medya.trt.com.tr/master.m3u8', null);
-        });
-    </script>
+<h2>7. Çocuklar</h2>
+<p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan veri toplamayız.</p>
+
+<h2>8. Değişiklikler</h2>
+<p>Bu politikayı güncelleyebiliriz. Önemli değişikliklerde güncel sürüm bu sayfada ve uygulama içinde yayınlanır ve üstteki tarih değiştirilir.</p>
+
+<h2>9. İletişim</h2>
+<p>SW Crew · <a href="mailto:destek.swcrew@gmail.com">destek.swcrew@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h1>Fast IPTV Privacy Policy</h1>
+<p class="muted">Last updated: 27 October 2026 · Developer: SW Crew · Contact: destek.swcrew@gmail.com</p>
+
+<p>Fast IPTV is a player app that lets you watch live TV, movies and series using the details of your own IPTV subscription. The app does not provide or sell any channels, streams or content; all content comes from your own IPTV provider.</p>
+
+<h2>1. Data we collect</h2>
+<ul>
+  <li><strong>Google account information:</strong> When you sign in with Google, your email address, name, profile photo and Firebase user ID (UID) are processed.</li>
+  <li><strong>IPTV connection details:</strong> The server address, username, password and/or M3U URL and list name you enter. They are stored in the cloud linked to your account so your list appears when you sign in on another device.</li>
+  <li><strong>Favorite channels:</strong> The name, ID, logo and order of channels you favorite are stored in the cloud linked to your account.</li>
+  <li><strong>On-device settings:</strong> Preferences such as whether the intro was shown and the channel info banner duration are kept only on your device.</li>
+</ul>
+<p>We do not use any advertising, analytics, crash-reporting or tracking SDKs. We do not access location, contacts, camera, microphone or similar data. The app only uses the internet permission.</p>
+
+<h2>2. How we use data</h2>
+<ul>
+  <li>To let you sign in and identify your account,</li>
+  <li>To sync your IPTV list and favorites across your devices,</li>
+  <li>To access content from your IPTV provider on your behalf.</li>
+</ul>
+<p>We do not sell or rent your data, use it for advertising or profiling, or share it with third parties.</p>
+
+<h2>3. Service providers</h2>
+<ul>
+  <li><strong>Google Firebase (Authentication and Cloud Firestore):</strong> Used for sign-in and cloud storage. Data is processed by Google; see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>.</li>
+  <li><strong>Your IPTV provider:</strong> The app connects directly to your provider's server with the details you enter. Your provider can see your IP address and viewing requests; this is governed by their own privacy policy and is outside our control. Some providers may use unencrypted (http) connections.</li>
+</ul>
+
+<h2>4. Security</h2>
+<p>Your cloud data is protected by Firebase security rules: each user can read and write only their own data. Data is encrypted in transit on Google's infrastructure. Your IPTV password is stored in the cloud record linked to your account and is accessible only to your account. No method is 100% secure, so we recommend not reusing your IPTV password elsewhere.</p>
+
+<h2>5. Retention and deletion</h2>
+<p>Your data is kept until you delete it or your account is deleted. When you sign out, the on-device copy of your favorites is removed; the cloud copy stays in your account. <strong>To delete your account and all data stored in the cloud (IPTV details, favorites, account record)</strong>, email <a href="mailto:destek.swcrew@gmail.com">destek.swcrew@gmail.com</a> from your Google account's address with the subject "Account deletion request"; it will be deleted within 30 days. Uninstalling the app removes local data on the device.</p>
+
+<h2>6. Your rights</h2>
+<p>Under applicable law (including GDPR and Turkish KVKK) you have the right to access, correct, delete, object to the processing of, and port your data. Send requests to the email address above.</p>
+
+<h2>7. Children</h2>
+<p>The app is not directed to children under 13 and we do not knowingly collect data from children.</p>
+
+<h2>8. Changes</h2>
+<p>We may update this policy. For material changes, the updated version will be published on this page and in the app, and the date above will change.</p>
+
+<h2>9. Contact</h2>
+<p>SW Crew · <a href="mailto:destek.swcrew@gmail.com">destek.swcrew@gmail.com</a></p>
+</section>
 </body>
 </html>
