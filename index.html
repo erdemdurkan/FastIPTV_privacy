@@ -25,6 +25,7 @@
   <li><strong>Google hesabı bilgileri:</strong> Google ile giriş yaptığınızda e-posta adresiniz, adınız, profil fotoğrafınız ve Firebase kullanıcı kimliğiniz (UID) işlenir.</li>
   <li><strong>IPTV bağlantı bilgileri:</strong> Sizin girdiğiniz sunucu adresi, kullanıcı adı, şifre ve/veya M3U bağlantısı ile liste adı. Bu bilgiler hesabınıza bağlı olarak bulutta saklanır; böylece başka cihazda aynı hesapla girdiğinizde listeniz gelir.</li>
   <li><strong>Favori kanallar:</strong> Favori olarak eklediğiniz kanalların adı, kimliği, logosu ve sıralaması hesabınıza bağlı olarak bulutta saklanır.</li>
+  <li><strong>Deneme ve üyelik kaydı:</strong> Ücretsiz deneme hakkının tekrar kullanılmasını önlemek için, ilk girişte e-posta adresiniz ve deneme başlangıç zamanı bulutta ayrı bir kayıt olarak saklanır. Satın alma işlemleri Google Play üzerinden yapılır; ödeme bilgilerinizi (kart vb.) biz görmeyiz veya saklamayız. Uygulama yalnızca hangi planlara sahip olduğunuzu Google Play'den sorgular.</li>
   <li><strong>Cihazdaki ayarlar:</strong> Tanıtım ekranının gösterilip gösterilmediği, kanal bilgi penceresi süresi gibi tercihler yalnızca cihazınızda tutulur.</li>
 </ul>
 <p>Reklam, analiz (analytics), çökme raporu veya takip amaçlı herhangi bir SDK kullanmıyoruz. Konum, rehber, kamera, mikrofon gibi verilere erişmiyoruz. Uygulama yalnızca internet izni kullanır.</p>
@@ -46,8 +47,14 @@
 <h2>4. Güvenlik</h2>
 <p>Bulut verileriniz Firebase güvenlik kurallarıyla korunur: her kullanıcı yalnızca kendi verisini okuyup yazabilir. Veriler Google altyapısında aktarım sırasında şifrelenir. IPTV şifreniz hesabınıza bağlı bulut kaydında saklanır ve yalnızca sizin hesabınızın erişimine açıktır. Hiçbir yöntem %100 güvenli değildir; bu yüzden IPTV şifrenizi başka yerlerde kullanmamanızı öneririz.</p>
 
-<h2>5. Saklama ve silme</h2>
-<p>Verileriniz siz silene kadar veya hesabınız silinene kadar saklanır. Çıkış yaptığınızda favori listesinin cihazdaki kopyası silinir; bulut kopyası hesabınızda kalır. <strong>Hesabınızın ve bulutta saklanan tüm verilerinizin (IPTV bilgileri, favoriler, hesap kaydı) silinmesi için</strong> <a href="mailto:destek.swcrew@gmail.com">destek.swcrew@gmail.com</a> adresine, Google hesabınızın e-postası ile "Hesap silme talebi" konulu bir e-posta gönderin; en geç 30 gün içinde silinir. Uygulamayı kaldırmak cihazdaki yerel verileri siler.</p>
+<h2 id="silme">5. Saklama ve silme (hesap silme)</h2>
+<p>Verileriniz siz silene kadar veya hesabınız silinene kadar saklanır. Çıkış yaptığınızda favori listesinin cihazdaki kopyası silinir; bulut kopyası hesabınızda kalır.</p>
+<ul>
+  <li><strong>Uygulama içinde:</strong> Hesabım → Ayarlar → <em>Hesabımı ve verilerimi sil</em> seçeneği, Google hesabı bağlantınızı, bulutta saklanan IPTV bilgilerinizi ve favorilerinizi anında ve kalıcı olarak siler.</li>
+  <li><strong>Uygulamaya erişemiyorsanız:</strong> <a href="mailto:destek.swcrew@gmail.com?subject=Hesap%20silme%20talebi">destek.swcrew@gmail.com</a> adresine Google hesabınızın e-postası ile "Hesap silme talebi" konulu bir e-posta gönderin; hesabınız ve tüm verileriniz en geç 30 gün içinde silinir.</li>
+</ul>
+<p>Uygulamayı kaldırmak yalnızca cihazdaki yerel verileri siler.</p>
+<p><strong>İstisna:</strong> Ücretsiz deneme hakkının her hesap silişte yeniden kazanılmasını (kötüye kullanımı) önlemek için, e-posta adresiniz ve deneme başlangıç zamanından oluşan deneme kaydı hesap silindikten sonra da saklanır. Bu kayıt başka hiçbir kişisel veri içermez ve yalnızca bu amaçla kullanılır. Bu kaydın da silinmesini istiyorsanız e-posta ile başvurabilirsiniz; bu durumda aynı e-posta ile deneme hakkı yeniden tanımlanmayabilir.</p>
 
 <h2>6. Haklarınız</h2>
 <p>6698 sayılı KVKK ve GDPR kapsamında verilerinize erişme, düzeltme, silme, işlenmesine itiraz etme ve taşıma haklarına sahipsiniz. Taleplerinizi yukarıdaki e-posta adresine iletebilirsiniz.</p>
@@ -75,6 +82,7 @@
   <li><strong>Google account information:</strong> When you sign in with Google, your email address, name, profile photo and Firebase user ID (UID) are processed.</li>
   <li><strong>IPTV connection details:</strong> The server address, username, password and/or M3U URL and list name you enter. They are stored in the cloud linked to your account so your list appears when you sign in on another device.</li>
   <li><strong>Favorite channels:</strong> The name, ID, logo and order of channels you favorite are stored in the cloud linked to your account.</li>
+  <li><strong>Trial and membership record:</strong> To prevent the free trial from being reused, on first sign-in your email address and the trial start time are stored in the cloud as a separate record. Purchases are made through Google Play; we never see or store your payment details (card, etc.). The app only queries Google Play to see which plans you own.</li>
   <li><strong>On-device settings:</strong> Preferences such as whether the intro was shown and the channel info banner duration are kept only on your device.</li>
 </ul>
 <p>We do not use any advertising, analytics, crash-reporting or tracking SDKs. We do not access location, contacts, camera, microphone or similar data. The app only uses the internet permission.</p>
@@ -96,8 +104,14 @@
 <h2>4. Security</h2>
 <p>Your cloud data is protected by Firebase security rules: each user can read and write only their own data. Data is encrypted in transit on Google's infrastructure. Your IPTV password is stored in the cloud record linked to your account and is accessible only to your account. No method is 100% secure, so we recommend not reusing your IPTV password elsewhere.</p>
 
-<h2>5. Retention and deletion</h2>
-<p>Your data is kept until you delete it or your account is deleted. When you sign out, the on-device copy of your favorites is removed; the cloud copy stays in your account. <strong>To delete your account and all data stored in the cloud (IPTV details, favorites, account record)</strong>, email <a href="mailto:destek.swcrew@gmail.com">destek.swcrew@gmail.com</a> from your Google account's address with the subject "Account deletion request"; it will be deleted within 30 days. Uninstalling the app removes local data on the device.</p>
+<h2 id="delete">5. Retention and deletion (account deletion)</h2>
+<p>Your data is kept until you delete it or your account is deleted. When you sign out, the on-device copy of your favorites is removed; the cloud copy stays in your account.</p>
+<ul>
+  <li><strong>In the app:</strong> My Account → Settings → <em>Delete my account and data</em> immediately and permanently deletes your Google sign-in link, the IPTV details stored in the cloud, and your favorites.</li>
+  <li><strong>If you cannot access the app:</strong> email <a href="mailto:destek.swcrew@gmail.com?subject=Account%20deletion%20request">destek.swcrew@gmail.com</a> from your Google account's address with the subject "Account deletion request"; your account and all data will be deleted within 30 days.</li>
+</ul>
+<p>Uninstalling the app only removes local data on the device.</p>
+<p><strong>Exception:</strong> To prevent the free trial from being regained each time an account is deleted (abuse prevention), the trial record, consisting of your email address and the trial start time, is retained after account deletion. It contains no other personal data and is used only for this purpose. If you want this record deleted as well, contact us by email; in that case the same email address may not be granted a new trial.</p>
 
 <h2>6. Your rights</h2>
 <p>Under applicable law (including GDPR and Turkish KVKK) you have the right to access, correct, delete, object to the processing of, and port your data. Send requests to the email address above.</p>
